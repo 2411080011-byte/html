@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    outline: 1px solid black;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    background-color: blue;
+}
+
+body{
+    margin: 0;
+}
+
+header h1{
+    margin: 0;
+    text-align: center;
+}
+
+header nav{
+    margin: auto;
+}
+
+header nav ul li{
+    display: inline ;
+}
+
