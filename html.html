@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            height: 95vh;
+            /* background: linear-gradient(to right, orange, red); */
+        }
+
+        form{
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;  
+            border-radius: 30px;
+            background-color: white;
+            border: 1px solid orange;
+            animation: parpadear 1.5s linear infinite alternate both;
+        }
+
+        @keyframes parpadear {
+            0%{
+                box-shadow: 0 0 10px rgb(0, 0, 0);
+            }
+
+            50%{
+                box-shadow: 0 0 50px rgb(0, 0, 0);
+            }
+
+            100%{
+                box-shadow: 0 0 10px rgb(0, 0, 0);
+            }
+        }
+
+        form h1{
+            text-align: center;
+        }
+
+        form label{
+            margin-bottom: 3px;
+        }
+
+        form input{
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid orange;
+        }
+
+        form input:focus{
+            outline-color: orange;
+        }
+        
+        .boton{
+            width: 100px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 5px 0;
+            outline: none;
+            border: 1px solid orange;
+            background-color: white;
+        }
+
+        .boton:hover{
+            color: white;
+            border: none;
+            outline: 1px solid orange;
+            outline-offset: 5px;
+            background: linear-gradient(to right, orange, red);
+        }
+
+    </style>
+</head>
+<body>  
+    <form action="index.html">
+        <h1>Formulario</h1>
+
+        <label for="">Ingresa tu edad</label>
+        <input type="number" placeholder="Ejm: 18">
+
+        <label for="">Ingresa una contraseña</label>
+        <input type="password" placeholder="contraseña">
+
+
+        <input class="boton" type="submit" value="Enviar Form">
+    </form>
+</body>
+</html>
