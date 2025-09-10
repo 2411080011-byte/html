@@ -4,6 +4,7 @@
 }
 
 body{
+    width: 100%;
     margin: 0;
 }
 
@@ -47,6 +48,10 @@ header nav ul li a{
     margin: 0;
 }
 
+#pagina-main #sobre-mi p, #pagina-main :is(#datos-extras, #mis-proyectos) p:first-child{
+    margin-top: 6px;
+}
+
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
     width: 70%;
     background-color: white;
@@ -74,4 +79,42 @@ footer h2{
     margin: 0 auto;
     width: 300px;
     font-size: 1.2rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    
+    header h1{
+        width: 70%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    header nav{
+        width: 80%;
+    }
+
+    #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
+        width: 90%;
+    }
+
+    #pagina-main h1{
+        font-size: 1.4rem;
+    }
+
+    #pagina-main p{
+        font-size: .9rem;
+    }
+
+    footer{
+        display: block;
+        padding: 20px 0;
+    }
+
+    footer h2{
+        padding: 10px 0;
+        width: 100%;
+        font-size: .9rem;
+    }
 }
