@@ -30,9 +30,10 @@ header nav{
 }
 
 header nav ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     list-style: none;
+    padding: 0;
 }
 
 header nav ul li a{
@@ -59,7 +60,7 @@ header nav ul li a:hover{
     margin: 0;
 }
 
-#pagina-main #sobre-mi p, #pagina-main :is(#datos-extras, #mis-proyectos) p:first-child{
+#pagina-main h1 ~ p{
     margin-top: 6px;
 }
 
@@ -70,11 +71,6 @@ header nav ul li a:hover{
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(204, 204, 204);
-}
-
-#pagina-main section article{
-    line-height: 4px;
-    padding: 4px;
 }
 
 footer{
@@ -104,7 +100,7 @@ footer h2{
     }
 
     header nav{
-        width: 80%;
+        width: 90%;
     }
 
     #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
@@ -117,6 +113,12 @@ footer h2{
 
     #pagina-main p{
         font-size: .9rem;
+        margin: 5px 0;
+    }
+
+    #pagina-main  :is(#datos-extras, #mis-proyectos) p{
+        text-align: center;
+        margin: 8px 0;
     }
 
     footer{
