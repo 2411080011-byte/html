@@ -61,9 +61,7 @@ body{
 
 header{
     background-color:   rgb(99, 99, 99);
-    padding: 25px 0 10px 0;
-    position: sticky;
-    top: 0;
+    padding: 20px 0 10px 0;
 }
 
 header h1{
@@ -105,7 +103,10 @@ header nav ul li a:hover{
 
 #pagina-main{
     background-color: rgb(172, 172, 172);
-    padding: 10px 0;
+    padding: 18px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
 }
 
 #pagina-main h1{
@@ -117,12 +118,17 @@ header nav ul li a:hover{
 }
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
-    width: 70%;
+    width: 100%;
     background-color: rgb(247, 247, 247);
     padding: 8px 10px;
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(204, 204, 204);
+}
+
+#pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos):hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 10px black;
 }
 
 footer{
