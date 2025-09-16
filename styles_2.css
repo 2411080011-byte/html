@@ -1,0 +1,184 @@
+body { 
+    font: 400 1em/1.5 "Neuton"; 
+    text-align: center; margin: 0;
+}
+
+#title {
+    margin: 0;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 0;
+    span {
+
+        font: 900 2em/1 "Oswald", sans-serif;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;    
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+    /* Clip Background Image */
+
+        background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+
+    /* Animate Background Image */
+
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+
+    }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+/* CSS GENERAL */
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+}
+
+header{
+    background-color:   rgb(99, 99, 99);
+    padding: 25px 0 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    margin: 0;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+header nav{
+    width: 500px;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: .9rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+header nav ul li a:hover{
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 0 6px rgb(255, 136, 0);
+    background-color: rgb(255, 193, 113);
+}
+
+#pagina-main{
+    background-color: rgb(172, 172, 172);
+    padding: 10px 0;
+}
+
+#pagina-main h1{
+    margin: 0;
+}
+
+#pagina-main h1 ~ p{
+    margin-top: 6px;
+}
+
+#pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
+    width: 70%;
+    background-color: rgb(247, 247, 247);
+    padding: 8px 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(204, 204, 204);
+}
+
+footer{
+    background-color: rgb(99, 99, 99);
+    width: 100%;
+    display: flex;
+    padding: 30px 0;
+    text-align: center; 
+    align-items: center;
+}
+
+footer h2{
+    color: white;
+    margin: 0 auto;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    
+    header h1{
+        width: 70%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    header nav{
+        width: 90%;
+    }
+
+    #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
+        width: 90%;
+    }
+
+    #pagina-main h1{
+        font-size: 1.4rem;
+    }
+
+    #pagina-main p{
+        font-size: .9rem;
+        margin: 5px 0;
+    }
+
+    #pagina-main  :is(#datos-extras, #mis-proyectos) p{
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    footer{
+        display: block;
+        padding: 20px 0;
+    }
+
+    footer h2{
+        padding: 10px 0;
+        width: 100%;
+        font-size: .9rem;
+    }
+}
