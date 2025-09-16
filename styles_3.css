@@ -92,17 +92,16 @@ header nav ul li a{
     color: white;
     font-size: .9rem;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 12px 20px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
 }
 
 header nav ul li a:hover{
-    color: black;
-    outline: 1px solid orange;
+    color: white;
     outline-offset: 5px;
-    box-shadow: 0 0 6px rgb(255, 136, 0);
-    background-color: rgb(255, 193, 113);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
 }
 
 #pagina-main{
