@@ -137,11 +137,13 @@ header nav ul li a:hover{
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(204, 204, 204);
+    transition-duration: .32s;
 }
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos):hover{
     transform: scale(1.04);
     box-shadow: 0 0 10px black;
+    transition: transform .32s linear;
 }
 
 footer{

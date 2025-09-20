@@ -57,6 +57,7 @@ body {
 body{
     width: 100%;
     margin: 0;
+    background-color: rgb(188, 187, 187);
 }
 
 header{
@@ -75,6 +76,7 @@ header h1{
 header nav{
     width: 500px;
     margin: auto;
+    padding: 5px 0;
 }
 
 header nav ul{
@@ -88,25 +90,27 @@ header nav ul li a{
     color: white;
     font-size: .9rem;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 16px;
     border: 1px solid rgb(202, 202, 202);
-    border-radius: 10px;
+    border-radius: 15px;
+    outline-offset: 0;
+    transition: border .3s linear;
 }
 
 header nav ul li a:hover{
-    color: black;
-    outline: 1px solid orange;
-    outline-offset: 5px;
-    box-shadow: 0 0 6px rgb(255, 136, 0);
-    background-color: rgb(255, 193, 113);
+    outline: 1px solid rgb(255, 98, 0);
+    outline-offset: 4px;
+    border-color: transparent;
+    transition: outline-offset .25s linear;
 }
 
 #pagina-main{
-    background-color: rgb(172, 172, 172);
+    width: 80%;
+    margin: auto;
     padding: 18px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
+    gap: 30px;
 }
 
 #pagina-main h1{
@@ -119,16 +123,20 @@ header nav ul li a:hover{
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
     width: 100%;
-    background-color: rgb(247, 247, 247);
+    background-color: rgba(247, 247, 247, 0.931);
     padding: 8px 10px;
     margin: 10px auto;
+    font-size: .8rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(204, 204, 204);
+    transition-duration: .32s;
 }
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos):hover{
     transform: scale(1.04);
     box-shadow: 0 0 10px black;
+    background-color: white;
+    transition: transform .32s linear;
 }
 
 footer{
