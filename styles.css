@@ -19,6 +19,7 @@ header{
     padding: 25px 0 10px 0;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 header h1{
@@ -54,7 +55,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    filter: drop-shadow(0 0 10px rgb(183, 0, 255))  drop-shadow(1px 1px 1px rgb(183, 0, 255));
+    filter: drop-shadow(0 0 0 rgb(183, 0, 255))  drop-shadow(2px 2px 2px rgb(183, 0, 255));
     transition: filter .3s linear;
 }
 
@@ -73,6 +74,7 @@ header nav ul li a:hover{
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
     width: 60%;
+    color: rgb(0, 0, 0);
     background-color: rgb(235, 235, 235);
     padding: 8px 10px;
     margin: 25px auto;
