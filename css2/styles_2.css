@@ -23,6 +23,7 @@ body {
     /* Clip Background Image */
 
         background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+        filter:hue-rotate(190deg);
         -webkit-background-clip: text;
         background-clip: text;
 
@@ -57,11 +58,11 @@ body {
 body{
     width: 100%;
     margin: 0;
-    background-color: rgb(188, 187, 187);
+    background-color: rgb(126, 126, 126);
 }
 
 header{
-    background-color:   rgb(99, 99, 99);
+    background-color: rgb(0, 3, 50);
     padding: 20px 0 10px 0;
 }
 
@@ -91,17 +92,17 @@ header nav ul li a{
     font-size: .9rem;
     text-decoration: none;
     padding: 8px 16px;
-    border: 1px solid rgb(202, 202, 202);
     border-radius: 15px;
+    border: 1px solid white;
     outline-offset: 0;
-    transition: border .3s linear;
+    transition: .2s, .23s;
 }
 
 header nav ul li a:hover{
-    outline: 1px solid rgb(255, 98, 0);
-    outline-offset: 4px;
     border-color: transparent;
-    transition: outline-offset .25s linear;
+    border-color: rgb(168, 255, 255);
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 203))  drop-shadow(0 0 3px rgb(0, 225, 255));
+    transition: border .2s linear, filter .23s linear;
 }
 
 #pagina-main{
@@ -123,7 +124,7 @@ header nav ul li a:hover{
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
     width: 100%;
-    background-color: rgba(247, 247, 247, 0.931);
+    background-color: rgba(255, 255, 255, 0.931);
     padding: 8px 10px;
     margin: 10px auto;
     font-size: .8rem;
@@ -134,13 +135,14 @@ header nav ul li a:hover{
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos):hover{
     transform: scale(1.04);
-    box-shadow: 0 0 10px black;
     background-color: white;
+    border-color: rgb(168, 255, 255);
+    filter: drop-shadow(1px 1px 1px rgb(18, 18, 227))  drop-shadow(0 0 1px rgb(170, 245, 255));
     transition: transform .32s linear;
 }
 
 footer{
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(0, 3, 50);
     width: 100%;
     display: flex;
     padding: 30px 0;
