@@ -114,14 +114,14 @@ header nav ul li a{
     text-decoration: none;
     padding: 12px 20px;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 15px;
     transition: .23s;
 }
 
 header nav ul li a:hover{
     color: white;
     transition: box-shadow .23s linear;
-    box-shadow: 0 0 10px #FED75A;
+    box-shadow: 0 0 20px #FED75A;
     outline-offset: 5px;
 }
 

@@ -161,18 +161,34 @@ footer h2{
 
 @media (max-width: 700px) {
     
-    header h1{
-        width: 70%;
+    header #span{
+        width: 100%;
         margin: auto;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     header nav{
-        width: 90%;
+        width: 100%;
+    }
+
+    #pagina-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
     }
 
     #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
-        width: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos):hover{
+        transform: none;
+        background-color: white;
+        border-color:none;
+        filter: none;
+        transition: none;
     }
 
     #pagina-main h1{
