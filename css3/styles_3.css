@@ -72,6 +72,10 @@ body {
     scroll-behavior: smooth;
 }
 
+*::selection{
+    background-color: transparent;
+}
+
 body{
     width: 100%;
     margin: 0;
