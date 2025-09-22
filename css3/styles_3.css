@@ -30,39 +30,37 @@ body {
  */
 @-webkit-keyframes color-change-2x {
     0% {
-        border-color: #1dff15;
-        filter: drop-shadow(0 0 3px #1dff15);
+        border-color: #FED75A;
+        filter: drop-shadow(0 0 3px #FED75A);
     }
     100% {
-        border-color: #07ffda;
-        filter: drop-shadow(0 0 3px #07ffda);
+        border-color: #FED75A;
+        filter: drop-shadow(0 0 3px #FED75A);
     }
 }
 @keyframes color-change-2x {
     0% {
-        border-color: #1dff15;
-        filter: drop-shadow(0 0 3px #1dff15);
+        border-color: #e2ad00;
     }
     100% {
-        border-color: #07ffda;
-        filter: drop-shadow(0 0 3px #07ffda);
+        border-color: #ffe79a;
     }
 }
 
 @-webkit-keyframes color-change-2x- {
     0% {
-        filter: drop-shadow(0 0 3px #1dff15);
+        filter: drop-shadow(0 0 3px #FED75A);
     }
     100% {
-        filter: drop-shadow(0 0 3px #07ff0f);
+        filter: drop-shadow(0 0 3px #FED75A);
     }
 }
 @keyframes color-change-2x- {
     0% {
-        filter: drop-shadow(0 0 5px #1dff15);
+        filter: drop-shadow(0 0 5px #FED75A);
     }
     100% {
-        filter: drop-shadow(0 0 8px #07ff0f);
+        filter: drop-shadow(0 0 5px #FED75A);
     }
 }
 
@@ -120,6 +118,7 @@ body {
 body{
     width: 100%;
     margin: 0;
+    background-color: #FED75A;
 }
 
 header{
@@ -165,7 +164,7 @@ header nav ul li a{
 header nav ul li a:hover{
     color: white;
     transition: box-shadow .23s linear;
-    box-shadow: 0 0 8px white;
+    box-shadow: 0 0 10px #FED75A;
     outline-offset: 5px;
 }
 
@@ -193,7 +192,7 @@ header nav ul li a:hover{
 
 #pagina-main :is(#datos-extras, #sobre-mi, #mis-proyectos){
     width: 100%;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(241, 241, 241);
     padding: 8px 10px;
     margin: 10px auto;
     border-radius: 10px;
